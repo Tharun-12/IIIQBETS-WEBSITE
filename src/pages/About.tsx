@@ -5,6 +5,7 @@ import SectionHeading from '@/components/common/SectionHeading';
 import Button from '@/components/common/Button';
 import { motion } from 'framer-motion';
 import { viewportOnce, staggerContainer, staggerItem } from '@/lib/animations';
+import ProcessReengineering from '@/components/AboutCompo/ProcessReengineering';
 
 const whyChoose = [
   { num: '01', title: 'Experience', description: 'More than two decades of experience across technology, business domains, and industries.' },
@@ -118,6 +119,8 @@ export default function About() {
           </motion.div>
         </div>
       </section>
+
+      <ProcessReengineering />
 
       {/* Transformation philosophy */}
       <section className="py-20 sm:py-28">

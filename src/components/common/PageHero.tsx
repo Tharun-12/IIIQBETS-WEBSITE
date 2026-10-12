@@ -1,6 +1,7 @@
 import { type ReactNode } from 'react';
 import Reveal from '@/components/common/Reveal';
 import Breadcrumb, { type BreadcrumbItem } from '@/components/common/Breadcrumb';
+import ProcessReengineering from '../AboutCompo/ProcessReengineering';
 
 interface PageHeroProps {
   eyebrow?: string;
@@ -69,6 +70,8 @@ export default function PageHero({
         )}
         {children && <div className="mt-8">{children}</div>}
       </div>
+      
     </section>
+  
   );
 }
