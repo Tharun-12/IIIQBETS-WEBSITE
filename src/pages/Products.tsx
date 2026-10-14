@@ -7,6 +7,7 @@ import SectionHeading from '@/components/common/SectionHeading';
 import { products } from '@/data/products';
 import { staggerContainer, staggerItem, viewportOnce } from '@/lib/animations';
 import * as Icons from 'lucide-react';
+import Gallery from '@/components/Productcompo/Gallery';
 
 export default function Products() {
   return (
@@ -73,6 +74,9 @@ export default function Products() {
               );
             })}
           </motion.div>
+
+          <Gallery />
+          
         </div>
       </section>
     </>

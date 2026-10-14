@@ -6,6 +6,10 @@ import Button from '@/components/common/Button';
 import { motion } from 'framer-motion';
 import { viewportOnce, staggerContainer, staggerItem } from '@/lib/animations';
 import ProcessReengineering from '@/components/AboutCompo/ProcessReengineering';
+import BusinessProcessOverview from '@/components/AboutCompo/BusinessProcessOverview';
+import BenefitsSection from '@/components/AboutCompo/BenefitsSection';
+import CompanyOverview from '@/components/AboutCompo/companyoverview';
+
 
 const whyChoose = [
   { num: '01', title: 'Experience', description: 'More than two decades of experience across technology, business domains, and industries.' },
@@ -42,7 +46,7 @@ export default function About() {
       />
 
       {/* Company overview */}
-      <section className="py-20 sm:py-28">
+      {/* <section className="py-20 sm:py-28">
         <div className="iiq-container">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20">
             <div>
@@ -84,7 +88,9 @@ export default function About() {
             </Reveal>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <CompanyOverview />
 
       {/* Why Choose iiiQbets */}
       <section className="bg-offwhite py-20 sm:py-28">
@@ -148,6 +154,10 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      <BusinessProcessOverview />
+
+      <BenefitsSection />
 
       {/* CTA */}
       <section className="iiq-gradient-primary py-16 sm:py-20">
