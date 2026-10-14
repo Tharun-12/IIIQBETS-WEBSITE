@@ -6,6 +6,9 @@ import Navbar from '@/components/layout/Navbar';
 import MobileMenu from '@/components/layout/MobileMenu';
 import Footer from '@/components/layout/Footer';
 import ScrollToTop from '@/components/layout/ScrollToTop';
+import DigitalMarketingOverview from './pages/DigitalMarketingOverview';
+import DataAnalytics from './pages/DataAnalytics';
+import CloudServices from './pages/CloudServices';
 
 const Home = lazy(() => import('@/pages/Home'));
 const About = lazy(() => import('@/pages/About'));
@@ -48,6 +51,9 @@ function AnimatedRoutes() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/:slug" element={<ServiceDetail />} />
+          <Route path="/services/digital-marketing" element={< DataAnalytics/>} />
+          <Route path="/services/data-analytics" element={< DigitalMarketingOverview/>} />
+          <Route path="/services/cloud-services" element={< CloudServices/>} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:slug" element={<ProductDetail />} />
           <Route path="/solutions" element={<Solutions />} />
@@ -59,6 +65,7 @@ function AnimatedRoutes() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="*" element={<NotFound />} />
+
         </Routes>
       </motion.div>
     </AnimatePresence>
